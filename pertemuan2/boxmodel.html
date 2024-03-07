@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 1000px;
+        
+        }
+        /* p{
+            background-color:pink;
+            border: 5px dashed black;
+            border-radius: 20px;
+
+            margin: 50px 20px;
+
+            padding: 20px;
+
+
+        } */
+        nav{
+            background-color: pink;
+            border: 1px solid black;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        
+        li{
+            display: inline-block;
+            width: 100px; 
+            text-align: center;
+            margin-left: 10px;
+            border: 1px solid black;
+        }
+        .profile{
+            border: 2px solid black;
+            margin:  10px;
+
+            position: absolute;
+            left: 100px;
+/* kelebihan absolute adalah jika ingin menaruh gambar di belakang teks */
+
+            overflow: hidden;
+        }
+
+        img{
+            position: relative;
+        }
+
+        h1, p{
+            position: absolute;
+            z-index: 10;
+        }
+
+        a{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#">TOP</a>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <p>SITI SOLIKAH YOSI KARINDA PARK JISUNG JEONG JAEHYUN FALLINLY</p>
+
+    <div class="profile">
+        </div>
+        <h1>Nama saya H1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita explicabo repellat nam quos saepe aspernatur at provident assumenda voluptate rerum.</p>
+        <img src="https://i.mydramalist.com/e5oXd_5f.jpg" alt="">
+    </div>
+
+   
+
+</body>
+</html>
